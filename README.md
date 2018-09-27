@@ -6,14 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Setup:
 
-    - clone this repo
-    - run `npm install`
-    - run `npm start`
+- clone this repo
+- run `npm install`
+- run `npm start`
 
 ## Testing
 
-    This app is tested with Jest, to run the test suite run `npm test`
+This app is tested with Jest, to run the test suite run `npm test`
 
 ## Known Bugs
 
-    - Jest can't be run in watch mode on Linux if VSCode is open as per [Bug: Watch mode on Linux causes a ENOSPC Node.js error #3254](https://github.com/facebook/jest/issues/3254)
+- Jest can't be run in watch mode on Linux if VSCode is open as per [Bug: Watch mode on Linux causes a ENOSPC Node.js error #3254](https://github.com/facebook/jest/issues/3254)
