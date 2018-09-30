@@ -1,9 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`matches snapshop 1`] = `
-<div
-  data-testid="viewer-title"
->
-  Hello, Space!
+<div>
+  <div
+    data-testid="viewer-title"
+  >
+    Hello, Space!
+  </div>
+  <img
+    alt="space"
+    data-testid="picture-imageSrc"
+    src="https://apod.nasa.gov/apod/image/1809/E0102NS_HubbleChandra_960.jpg"
+  />
 </div>
 `;
