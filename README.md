@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - clone this repo
 - run `npm install`
-- create a `.env` file in the root directory, and assign you NASA api key to `REACT_APP_NASA_API_KEY`
+- create a `.env` file in the root directory, and assign your NASA api key to `REACT_APP_NASA_API_KEY`
 - run `npm start`
 
 ## Testing
