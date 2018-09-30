@@ -1,17 +1,25 @@
 import React from "react";
 import Picture from "./Picture";
 import "jest-dom/extend-expect";
-import { mount, configure } from 'enzyme'
+import { shallow, mount, configure } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
 
 
 describe('Picture', () => {
-  const props = { imageSrc: 'https://apod.nasa.gov/apod/image/1809/E0102NS_HubbleChandra_960.jpg' }
+  const props = {
+    imageSrc: 'https://apod.nasa.gov/apod/image/1809/E0102NS_HubbleChandra_960.jpg',
+    title: 'space'
+  }
 
-  it('Recieves and renders imageSrc prop', () => {
+  test('Recieves imageSrc prop', () => {
     const picture = mount(<Picture {...props} />)
     expect(picture.props().imageSrc).toEqual(props.imageSrc)
+  });
+
+  test('Recieves title prop', () => {
+    const picture = mount(<Picture {...props} />)
+    expect(picture.props().title).toEqual(props.title)
   });
 });

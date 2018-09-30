@@ -1,3 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`matches snapshop 1`] = `<div />`;
+exports[`matches snapshop 1`] = `
+<div>
+  <img
+    alt={undefined}
+    src={undefined}
+  />
+</div>
+`;
