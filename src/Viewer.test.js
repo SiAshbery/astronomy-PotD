@@ -1,13 +1,17 @@
 import React from "react";
 import Viewer from "./Viewer";
-import { render } from "react-testing-library";
-import { getByTestId } from 'dom-testing-library';
 import "jest-dom/extend-expect";
+import { shallow, configure } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16';
 
-test("Recieves and renders title prop", () => {
-  const { getByTestId } = render(
-    <Viewer title='Hello, Space!' />
-  );
-  expect(getByTestId("viewer-title")).toHaveTextContent('Hello, Space!');
+configure({ adapter: new Adapter() });
+
+describe('Viewer', () => {
+  test('Has default state', () => {
+    const viewer = shallow(<Viewer />)
+
+    expect(viewer.state().defaultUrl).toEqual('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY');
+    expect(viewer.state().pictureData).toEqual({});
+  });
+
 });
-

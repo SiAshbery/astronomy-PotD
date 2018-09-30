@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Picture from './Picture'
 import './App.css';
+import axios from 'axios';
 
-export default ({ title }) => (
-  <div>
-    <div data-testid="viewer-title">{title}</div>
-    <Picture imageSrc="https://apod.nasa.gov/apod/image/1809/E0102NS_HubbleChandra_960.jpg" />
-  </div>
-);
+
+class Viewer extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      defaultUrl: 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY',
+      pictureData: {}
+    }
+  }
+
+  render() {
+    return (
+      <div>
+
+      </div>
+    );
+  }
+}
+
+export default Viewer;
