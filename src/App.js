@@ -5,7 +5,7 @@ import Viewer from './Viewer'
 class App extends Component {
   render() {
     return (
-      <Viewer title='Hello, Space!' />
+      <Viewer />
     );
   }
 }

@@ -13,21 +13,12 @@ class Viewer extends Component {
   }
 
   componentWillMount() {
-    this.getPictureData();
-  }
-
-  getPictureData(date = undefined) {
-    const url = date ? this.requestUrlWithDate(date) : this.state.defaultUrl
-    rest(url).then((response) => {
+    fetch(this.state.defaultUrl).then((response) => {
       const pictureData= JSON.parse(response.entity);
-      this.setState({
-        pictureData
+        this.setState({
+          pictureData
+        })
       })
-    })
-  }
-
-  requestUrlWithDate(date) {
-    return `${this.state.defaultUrl}&date=${date}`
   }
 
   render() {

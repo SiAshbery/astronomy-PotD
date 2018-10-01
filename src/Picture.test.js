@@ -1,6 +1,5 @@
 import React from "react";
 import Picture from "./Picture";
-import "jest-dom/extend-expect";
 import { shallow, mount, configure } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16';
 

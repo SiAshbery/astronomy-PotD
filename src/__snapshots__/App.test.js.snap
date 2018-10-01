@@ -2,9 +2,12 @@
 
 exports[`matches snapshop 1`] = `
 <div>
+  <h1 />
+  <div />
   <img
     alt={undefined}
     src={undefined}
   />
+  <div />
 </div>
 `;
